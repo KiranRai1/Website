@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Times', Arial, sans-serif;
+    box-sizing:border-box;
+    }
+  
+    body {
+      background: linear-gradient(90deg, #0005a0 0%, #160c43 30%, #160c43 30%, #6c00c4 100%);
+      margin: 0;
+    }
+
+    .boxes{
+        display: flex;
+        justify-content: flex-end; /* Align the form to the right */
+        flex-grow: 1;  
+    }
+  
+    .checkingout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding:70px 70px ;
+    } 
+  
+    .mainb{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: aliceblue;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }  
+  
+    .cart{
+     top: 80px;
+     right: 0;
+     padding: 30px;
+     width: 400px;
+     background: rgb(42, 49, 60);
+     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+   
+    .cart h3{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      top: 0px;
+    }
+
+    .basic{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    
+      .formbox .row100 .basic{
+        width: 100%;
+      }
+    
+      .basic span{
+        color: aliceblue;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+    
+      .basic input{
+        padding: 10px;
+        font-size: 1.1em;
+        outline: none;
+        border: 1px solid #ffffff;
+      }
+    
+    
+      .basic input[type="submit"]{
+        background: #232368;
+        color: aliceblue;
+        border: none;
+        font-size: 1.1em;
+        max-width: 120px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 14px 15px;
+     }
+
+     .side{
+        padding: 30px;
+        background: rgb(42, 49, 60);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        position: absolute;
+        top: 780px;
+        left: 50px;
+        width: 600px;
+        height: 200px;
+        color: aliceblue;
+        float: right;
+      }
+
+      .other{
+        padding: 30px;
+        background: rgb(42, 49, 60);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        width: 600px;
+        height: 700px;
+        color: aliceblue;
+      }
+   
+@media screen and (max-width: 600px) {
+  header, footer {
+    font-size: 14px;
+}
+main {
+  padding: 10px;
+}
+}

@@ -24,15 +24,7 @@
   }
 
   .form{
-    grid-area:form;
-  }
-
-  .info{
-    grid-area:info;
-  }
-
-  .map{
-    grid-area: map;
+    grid-area:form; /* else the page will continue underneath the form */
   }
 
   .contact{
@@ -42,7 +34,7 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
   }
 
-  .box{
+  .whole{
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -59,42 +51,81 @@
   }
 
   /*form*/
-  .formbox{
+  .boxes{
     position: relative;
     width: 100%;
+    height: 597px;
   }
 
-  .formbox .row50{
+  .boxes .another{
     display: flex;
-    gap: 20px;
+    gap: 30px;
+
   }
 
-  .inputBox{
+  .basic {
+  margin-bottom: 10px;
+  width: 100%; /* Set the width to 100% to take up the entire width */
+}
+
+.basic span {
+  color: aliceblue;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.basic input,
+.basic textarea {
+  width: 100%; /* Set the width to 100% to take up the entire width */
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #ffffff;
+}
+
+.basic textarea {
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.basic input[type="submit"] {
+  background: #232368;
+  color: aliceblue;
+  border: none;
+  font-size: 1.1em;
+  max-width: 100%; /* Set the width to 100% to take up the entire width */
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+
+  .basic{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
   }
 
-  .formbox .row100 .inputBox{
+  .boxes .row1 .basic{
     width: 100%;
   }
 
-  .inputBox span{
+  .basic span{
     color: aliceblue;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
   }
 
-  .inputBox input{
+  .basic input{
     padding: 10px;
     font-size: 1.1em;
     outline: none;
     border: 1px solid #ffffff;
   }
 
-  .inputBox textarea{
+  .basic textarea{
     padding:10px;
     font-size: 1.1em;
     outline: none;
@@ -104,7 +135,7 @@
     margin-bottom: 10px;
   }
 
-  .inputBox input[type="submit"]{
+  .basic input[type="submit"]{
     background: #232368;
     color: aliceblue;
     border: none;
@@ -115,38 +146,8 @@
     padding: 14px 15px;
  }
 
- .inputBox ::placeholder{
+ .basic ::placeholder{
   color: #999;
- }
-
- /*info*/
- .info{
-  background:#e6f0ff;
- }
-
- .info h3{
-  color: aliceblue;
- }
-
- .info .infoBox div{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
- }
-
- .info .infoBox div a{
-  text-decoration: none;
-  font-size: 1.1em;
-  min-width: 90px;
-  height: 400px;
-  color: aliceblue;
-  background: #4D6995;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  border-radius: 50%;
-  margin-right: 15px;
  }
 
  .side{
@@ -157,7 +158,7 @@
   top: 1px;
   left: 650px;
   width: 400px;
-  height: 300px;
+  height: 260px;
   color: aliceblue;
   float: right;
 }
@@ -167,7 +168,7 @@
   background: rgb(42, 49, 60);
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
   position: absolute;
-  top: 460px;
+  top: 410px;
   left: 650px;
   width: 400px;
   height: 300px;
@@ -184,10 +185,10 @@ iframe{
   background: rgb(42, 49, 60);
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
   position: absolute;
-  top: 310px;
+  top: 270px;
   left: 650px;
   width: 400px;
-  height: 140px;
+  height: 130px;
   color: aliceblue;
 }
 
