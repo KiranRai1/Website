@@ -102,7 +102,7 @@
     .cart h3{
       color: #ffffff;
       font-weight: 500;
-      font-size: 1.4em;
+      font-size: 2.4em;
       margin-bottom: 10px;
       top: 0px;
     }
@@ -123,11 +123,12 @@
         margin-top: 10px;
         margin-bottom: 5px;
         font-weight: 500;
+        font-size: 1.6em
       }
     
       .basic input{
         padding: 10px;
-        font-size: 1.1em;
+        font-size: 1.4em;
         outline: none;
         border: 1px solid #ffffff;
       }
@@ -137,7 +138,7 @@
         background: #232368;
         color: aliceblue;
         border: none;
-        font-size: 1.1em;
+        font-size: 1.7em;
         max-width: 120px;
         font-weight: 500;
         cursor: pointer;
